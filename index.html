@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta Email="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MegaComputer</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a59ccc9d18.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="">
+  <!-- ========HEADER SECTION======== -->
+  <header id="header-section" class="headerSection">
+    <nav class="fixed top-0 left-1/2 transform -translate-x-1/2 w-[100%] z-50 bg-black">
+      <div class="navbar px-5 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="text-2xl md:text-4xl font-extrabold text-white">
+          MegaComputer<span class="text-[#FF4240]">’</span>s
+        </a>
+        <!-- Menu -->
+        <ul class="hidden lg:flex gap-6">
+          <li><a href="#home" class="text-white hover:text-[#FF4240] text-base">Home</a></li>
+          <li><a href="#about" class="text-white hover:text-[#FF4240] text-base">About</a></li>
+          <li><a href="#shop" class="text-white hover:text-[#FF4240] text-base">Shop</a></li>
+          <li><a href="#faq" class="text-white hover:text-[#FF4240] text-base">FAQ</a></li>
+          <li><a href="#kontak" class="text-white hover:text-[#FF4240] text-base">Contact</a></li>
+        </ul>
+        <!-- Search & Button -->
+        <div class="flex items-center gap-4">
+          <i class="fa-solid fa-magnifying-glass hidden md:block text-xl cursor-pointer text-white"></i>
+          <button class="text-sm py-2 px-4 md:px-6 font-bold bg-[#FF4240] text-white rounded-lg">
+            Cari
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- ======HERO SECTION======= -->
+    <!-- ======HERO SECTION======= -->
+<section id="hero_Sction" class="heroSection container mx-auto mt-[50px] p-5">
+  <div class="carousel w-full">
+    <!-- Slide 1 -->
+    <div id="slide1" class="carousel-item relative w-full">
+      <img src="./Images/123.png" class="w-full h-full object-cover" />
+      <div class="absolute bg-black text-white rounded-2xl p-8 bottom-8 right-8">
+        <h1 class="font-extrabold text-2xl">
+          Temukan PC impian kamu ditempat ini
+        </h1>
+        <p class="mt-4 leading-[26px]">
+          Buat pengalaman belanja dan promo menarik ditoko kami,
+          <br>
+          pengiriman cepat dan barang berkualitas
+          <br />
+          <br>
+          <span style="color: red; margin-top: 10px;">Jl . Raya No. 123, Sulawesi Selatan - Makassar</span>
+        </p>
+      </div>
+      <div class="absolute flex gap-4 transform -translate-y-1/2 left-8 right-5 bottom-12">
+        <a href="#slide4" class="btn btn-circle">❮</a>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="./Images/rakitan.jpg" class="w-full h-full object-cover" />
+      <div class="absolute bg-black text-white rounded-2xl p-8 bottom-8 right-8">
+        <h1 class="font-extrabold text-2xl">
+          Promo besar untuk bulan ini!
+        </h1>
+        <p class="mt-4 leading-[26px]">
+          Dapatkan diskon hingga 50% untuk berbagai jenis produk PC.
+          <br />
+          <br>
+          <span style="color: red; margin-top: 10px;">Jl . Raya No. 123, Sulawesi Selatan - Makassar</span>
+        </p>
+      </div>
+      <div class="absolute flex gap-4 transform -translate-y-1/2 left-8 right-5 bottom-12">
+        <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="./Images/kualitas.jpg" class="w-full h-full object-cover" />
+      <div class="absolute bg-black text-white rounded-2xl p-8 bottom-8 right-8">
+        <h1 class="font-extrabold text-2xl">
+          Layanan purna jual terbaik
+        </h1>
+        <p class="mt-4 leading-[26px]">
+          Nikmati garansi resmi dan layanan pelanggan terbaik
+          <br />
+          <br>
+          <span style="color: red; margin-top: 10px;">Jl . Raya No. 123, Sulawesi Selatan - Makassar</span>
+        </p>
+      </div>
+      <div class="absolute flex gap-4 transform -translate-y-1/2 left-8 right-5 bottom-12">
+        <a href="#slide2" class="btn btn-circle">❮</a>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div id="slide4" class="carousel-item relative w-full">
+      <img src="./Images/kirim.webp" class="w-full h-full object-cover" />
+      <div class="absolute bg-black text-white rounded-2xl p-8 bottom-8 right-8">
+        <h1 class="font-extrabold text-2xl">
+          Pengiriman cepat dan aman
+        </h1>
+        <p class="mt-4 leading-[26px]">
+          Pastikan barang sampai ke tangan Anda dengan aman
+          <br />
+          <br>
+          <span style="color: red; margin-top: 10px;">Jl . Raya No. 123, Sulawesi Selatan - Makassar</span>
+        </p>
+      </div>
+      <div class="absolute flex gap-4 transform -translate-y-1/2 left-8 right-5 bottom-12">
+        <a href="#slide3" class="btn btn-circle">❮</a>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </header>
+  <!-- ========HEADER SECTION======== -->
+  <!-- ========MAIN SECTION======== -->
+  <main>
+    <!-- progress section -->
+    <section class="container mx-auto mt-[50px]" id="about">
+      <div class="container mx-auto flex justify-center items-center">
+        <div class="text-center">
+          <h1 class="text-[#131318] text-4xl font-extrabold">
+            PC dengan Kualitas Terbaik
+          </h1>
+          <p class="mt-6 text-base text-[rgba(19, 19, 24, 0.6)] font-medium leading-[26px]">
+            Garansi 3 Tahun untuk semua barang <br />Barang Cepat Sampai di Rumah Kamu
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center items-center gap-8 mt-[48px]">
+        <div class="w-[250px] text-center">
+          <div class="radial-progress text-primary" style="--value: 100" role="progressbar">
+            100%
+          </div>
+          <h4 class="mt-6 text-xl font-bold text-[#131318]">
+            Semua Brand Ada
+          </h4>
+          <p class="text-base leading-[26px] mt-4">
+            Berkolaborasi dengan Semua Brand Terpercaya, Memberikan Barang Terbaik
+          </p>
+        </div>
+        <div class="w-[250px] text-center">
+          <div class="radial-progress text-primary" style="--value: 100" role="progressbar">
+            100%
+          </div>
+          <h4 class="mt-6 text-xl font-bold text-[#131318]">
+            Garansi Barang Kembali
+          </h4>
+          <p class="text-base leading-[26px] mt-4">
+            Kami Memberikan Garansi Kembali apabila dalam 3 hari barang tersebut rusak
+          </p>
+        </div>
+        <div class="w-[250px] text-center">
+          <div class="radial-progress text-primary" style="--value: 100" role="progressbar">
+            100%
+          </div>
+          <h4 class="mt-6 text-xl font-bold text-[#131318]">
+            Barang Kamu Cepat Sampai
+          </h4>
+          <p class="text-base leading-[26px] mt-4">
+            Agar barangmu cepat sampai, kami bekerja sama dengan jasa kirim tercepat.
+          </p>
+        </div>
+        <div class="w-[250px] text-center">
+          <div class="radial-progress text-primary" style="--value: 100" role="progressbar">
+            100%
+          </div>
+          <h4 class="mt-6 text-xl font-semibold text-[#131318]">
+            Barang Original berkualitas
+          </h4>
+          <p class="text-base leading-[26px] mt-4">
+            Memberikan Kualitas baik dengan kualitas kontrol terjamin untuk semua barang
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ======programme section===== -->
+    <section class="container mx-auto mt-[100px]" id="pages">
+      <div class="w-full py-8 flex justify-center items-center">
+        <div class="text-center">
+          <h1 class="text-4xl text-[#131318] font-extrabold">
+            Keunggulan Belanja Di MegaComputer's
+          </h1>
+          <p class="mt-8 leading-8 text-base">
+            Kami Memberikan Pelayanan Terbaik untuk Pelanggan Kami ke Seluruh Indonesia
+          </p>
+        </div>
+      </div>
+      <div class="w-full grid grid-cols-4 grid-rows-2 gap-6">
+        <div class="pt-[95px] px-10 pb-10 col-span-2 bg-[url('./Images/kualitas.jpg')] bg-cover rounded-2xl w-full">
+          <div class="text-left text-white">
+            <h1 class="text-[28px] font-extrabold">Kualitas Kontrol</h1>
+            <p class="leading-[26px] text-base mt-4">
+              Setiap barang yang kami kirimkan telah melalui proses pemeriksaan kualitas menyeluruh di gudang kami. Tim kontrol kualitas kami secara teliti memeriksa setiap unit untuk memastikan bahwa produk yang Anda terima berada dalam kondisi terbaik, sesuai dengan standar kualitas yang tinggi yang telah kami tetapkan.
+            </p>
+            <!-- <button class="px-[22px] py-[10px] bg-[#FF4240] rounded-lg text-white mt-6">
+              Register Now!
+            </button> -->
+          </div>
+        </div>
+        <div class="pt-[95px] px-10 pb-10 col-span-2 bg-[url('./Images/pengiriman.jpg')] bg-cover rounded-2xl w-full">
+          <div class="text-left text-white">
+            <h1 class="text-[28px] font-extrabold">Pengiriman Aman dan Cepat</h1>
+            <p class="leading-[26px] text-base mt-4">
+              Setiap paket kami melalui proses pengemasan yang cermat dan sistematis, menggunakan material berkualitas tinggi untuk melindungi barang Anda selama perjalanan. Dengan jaringan logistik kami yang luas dan armada kendaraan yang terawat, kami menjamin pengiriman cepat dan tepat waktu ke seluruh wilayah Indonesia.
+            </p>
+            <!-- <button class="px-[22px] py-[10px] bg-[#FF4240] rounded-lg text-white mt-6">
+              Register Now!
+            </button> -->
+          </div>
+        </div>
+        <div
+          class="pt-[207px] ps-10 pb-10 pe-[610px] col-span-4 bg-[url('./Images/rakitan.jpg')] bg-cover rounded-2xl w-full">
+          <div class="text-left text-white">
+            <h1 class="text-[28px] font-extrabold">Garansi Terjamin</h1>
+            <p class="leading-[26px] text-base mt-4">
+              Kami memberikan garansi penuh atas semua produk yang kami jual. Jika terjadi kerusakan atau ketidaksesuaian produk dengan spesifikasi yang tertera, kami akan mengganti atau memperbaiki produk Anda tanpa biaya tambahan. Kepuasan pelanggan adalah prioritas utama kami, dan garansi ini merupakan bentuk komitmen kami untuk memberikan layanan terbaik.
+            </p>
+            <!-- <button class="px-[22px] py-[10px] bg-[#FF4240] rounded-lg text-white mt-6">
+              Register Now!
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======product section========= -->
+    <section class="container mx-auto mt-[100px]" id="shop">
+      <div class="w-full py-8 flex justify-center items-center">
+        <div class="text-center">
+          <h1 class="text-4xl text-[#131318] font-extrabold">
+            Produk Terbaru Kami
+          </h1>
+          <p class="mt-8 leading-6 text-base">
+            Produk PC Rakitan yang Terpopuler di Toko Kami
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 grid-rows-3 mt-[48px] gap-6">
+        <div class="flex gap-5 ps-6 pt-6 pb-[22px] pe-[38px] items-center border-[1px] rounded-2xl">
+          <div class="w-[40%]">
+            <img class="w-full" src="./Images/2.jpg" alt="" />
+          </div>
+          <div class="w-[60%]">
+            <div class="flex justify-start gap-4">
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-heart"></i>
+                <p>200</p>
+              </div>
+            </div>
+            <div>
+              <h1 class="mt-3 font-extrabold text-xl">
+                Motherboard MB ASUS ROG STRIX Z490-H Z490 H GAMING
+              </h1>
+              <p class="mt-4 leading-[26px]">
+                - Garansi Resmi 3 Tahun by Sempurna Utama <br>
+                - Mohon tanyakan stok terlebih dahulu sebelum order <br>
+                - Harga dapat berubah sewaktu-waktu <br>
+                - Siap Kirim ke seluruh Indonesia <br>
+                - Harap konfirmasi jika barang sudah di terima <br>
+              </p>
+              <button onclick="toggleModal()" class="px-[22px] py-[10px] bg-[#FF4240] rounded-lg text-white mt-6">
+                Detail Spesifikasi
+              </button>
+            
+              <!-- Modal -->
+              <div id="productDetailsModal" class="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center z-50 hidden">
+                <div class="bg-white rounded-lg p-6 w-96">
+                  <div class="flex justify-between items-center mb-4">
+                    <h5 class="text-xl font-semibold">Detail Spesifikasi</h5>
+                    <button onclick="toggleModal()" class="text-gray-600 text-xl">&times;</button>
+                  </div>
+            
+                  <!-- General Information -->
+                  <div class="mb-4">
+                    <h6 class="text-lg font-semibold">General Information</h6>
+                    <ul class="list-disc pl-6">
+                      <li><strong>Model:</strong> ASUS ROG STRIX Z490-H Z490 H GAMING</li>
+                      <li><strong>Garansi:</strong> 3 Tahun (by MegaComputer's)</li>
+                      <li><strong>Harga:</strong> Dapat berubah sewaktu-waktu</li>
+                      <li><strong>Pengiriman:</strong> Siap Kirim ke seluruh Indonesia</li>
+                      <li><strong>Catatan:</strong> Mohon tanyakan stok terlebih dahulu sebelum order.</li>
+                    </ul>
+                  </div>
+            
+                  <!-- Key Specifications -->
+                  <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2">
+                        <h6 class="text-lg font-semibold">Key Specifications</h6>
+                        <ul class="mt-4 space-y-2">
+                            <li><strong>Chipset:</strong> Intel Z490</li>
+                            <li><strong>Socket:</strong> LGA 1200 (for 10th Gen Intel Core processors)</li>
+                            <li><strong>Memory:</strong>
+                                <ul class="pl-4 list-disc">
+                                    <li>4 x DDR4 DIMM slots</li>
+                                    <li>Supports up to 128GB DDR4-4600(OC) memory</li>
+                                    <li>Dual-channel memory architecture</li>
+                                </ul>
+                            </li>
+                            <li><strong>Storage:</strong>
+                                <ul class="pl-4 list-disc">
+                                    <li>2 x M.2 slots (one PCIe 3.0 x4, one PCIe 3.0 x4/SATA)</li>
+                                    <li>6 x SATA 6Gb/s ports</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2">
+                        <ul class="mt-4 space-y-2">
+                            <li><strong>Graphics:</strong>
+                                <ul class="pl-4 list-disc">
+                                    <li>Supports PCIe 3.0 x16 slots (x16 or x8+x4+x4)</li>
+                                    <li>Integrated graphics support (varies by CPU)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Networking:</strong>
+                                <ul class="pl-4 list-disc">
+                                    <li>Intel I225-V 2.5Gb Ethernet</li>
+                                    <li>Intel I219-V 1Gb Ethernet</li>
+                                </ul>
+                            </li>
+                            <li><strong>Audio:</strong>
+                                <ul class="pl-4 list-disc">
+                                    <li>ROG SupremeFX S1220A audio codec</li>
+                                    <li>7.1-channel HD audio</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+                  <div class="mt-4 text-right">
+                    <button onclick="toggleModal()" class="px-4 py-2 bg-gray-300 rounded-lg">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-start items-center gap-5 mt-4">
+              <div>
+                <p class="leading-[26px] text-[#FF4240] text-lg font-extrabold">
+                  Price - Rp.4.320.000
+                </p>
+              </div>
+              <div class="flex justify-start items-center gap-2">
+                <i style="font-size: 20px; margin-right: 10px;" class="fa-solid fa-cart-shopping"></i>
+                <p>Pengiriman <br> Pulau Jawa : Gratis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex gap-5 ps-6 pt-6 pb-[22px] pe-[38px] items-center border-[1px] rounded-2xl">
+          <div class="w-[40%]">
+            <img class="w-full" src="./Images/12.jpg" alt="" />
+          </div>
+          <div class="w-[60%]">
+            <div class="flex justify-start gap-4">
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-heart"></i>
+                <p>200</p>
+              </div>
+            </div>
+            <div>
+              <h1 class="mt-3 font-extrabold text-xl">
+                Monitor LG 24GN60R / 24GN60R-B UltraGear IPS 144hz 1ms with Freesync
+              </h1>
+              <p class="mt-4 leading-[26px]">
+                - Garansi Resmi 3 Tahun by Sempurna Utama <br>
+                - Mohon tanyakan stok terlebih dahulu sebelum order <br>
+                - Harga dapat berubah sewaktu-waktu <br>
+                - Siap Kirim ke seluruh Indonesia <br>
+                - Harap konfirmasi jika barang sudah di terima <br>
+              </p>
+              <button onclick="toggleModal()" class="px-[22px] py-[10px] bg-[#FF4240] rounded-lg text-white mt-6">
+                Detail Spesifikasi
+              </button>
+            </div>
+            <div class="flex justify-start items-center gap-5 mt-4">
+              <div>
+                <p class="leading-[26px] text-[#FF4240] text-lg font-extrabold">
+                  Price - Rp.1.650.000
+                </p>
+              </div>
+              <div class="flex justify-start items-center gap-2">
+                <i style="font-size: 20px; margin-right: 10px;" class="fa-solid fa-cart-shopping"></i>
+                <p>Pengiriman Pulau Jawa : Gratis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-5 ps-6 pt-6 pb-[22px] pe-[38px] items-center border-[1px] rounded-2xl">
+          <div class="w-[40%]">
+            <img class="w-full" src="./Images/1234.jpeg" alt="" />
+          </div>
+          <div class="w-[60%]">
+            <div class="flex justify-start gap-4">
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-eye"></i>
+                <p>204</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-heart"></i>
+                <p>230</p>
+              </div>
+            </div>
+            <div>
+              <h1 class="mt-3 font-extrabold text-xl">
+                ROG Strix Scar 16 (2023) G634
+              </h1>
+              <p class="mt-4 leading-[26px]">
+                - Garansi Resmi 3 Tahun by Sempurna Utama <br>
+                - Mohon tanyakan stok terlebih dahulu sebelum order <br>
+                - Harga dapat berubah sewaktu-waktu <br>
+                - Siap Kirim ke seluruh Indonesia <br>
+                - Harap konfirmasi jika barang sudah di terima <br>
+              </p>
+              <button onclick="toggleModal()" class="px-[22px] py-[10px] bg-[#FF4240] rounded-lg text-white mt-6">
+                Detail Spesifikasi
+              </button>
+            </div>
+            <div class="flex justify-start items-center gap-5 mt-4">
+              <div>
+                <p class="leading-[26px] text-[#FF4240] text-lg font-extrabold">
+                  Harga - Rp.44.699.000
+                </p>
+              </div>
+              <div class="flex justify-start items-center gap-2">
+                <i style="font-size: 20px; margin-right: 10px;" class="fa-solid fa-cart-shopping"></i>
+                <p>Pengiriman Pulau Jawa : Gratis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-5 ps-6 pt-6 pb-[22px] pe-[38px] items-center border-[1px] rounded-2xl">
+          <div class="w-[40%]">
+            <img class="w-full" src="./Images/loq.png" alt="" />
+          </div>
+          <div class="w-[60%]">
+            <div class="flex justify-start gap-4">
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-heart"></i>
+                <p>10.000</p>
+              </div>
+            </div>
+            <div>
+              <h1 class="mt-3 font-extrabold text-xl">
+                Lenovo LOQ 15 
+              </h1>
+              <p class="mt-4 leading-[26px]">
+                - Garansi Resmi 3 Tahun by Sempurna Utama <br>
+                - Mohon tanyakan stok terlebih dahulu sebelum order <br>
+                - Harga dapat berubah sewaktu-waktu <br>
+                - Siap Kirim ke seluruh Indonesia <br>
+                - Harap konfirmasi jika barang sudah di terima <br>
+              </p>
+              <button onclick="toggleModal()" class="px-[22px] py-[10px] bg-[#FF4240] rounded-lg text-white mt-6">
+                Detail Spesifikasi
+              </button>
+            </div>
+            <div class="flex justify-start items-center gap-5 mt-4">
+              <div>
+                <p class="leading-[26px] text-[#FF4240] text-lg font-extrabold">
+                  Harga - Rp.9.399.000
+                </p>
+              </div>
+              <div class="flex justify-start items-center gap-2">
+                <i style="font-size: 20px; margin-right: 10px;" class="fa-solid fa-cart-shopping"></i>
+                <p>Pengiriman Pulau Jawa : Gratis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-5 ps-6 pt-6 pb-[22px] pe-[38px] items-center border-[1px] rounded-2xl">
+          <div class="w-[40%]">
+            <img class="w-full" src="./Images/hp.webp" alt="" />
+          </div>
+          <div class="w-[60%]">
+            <div class="flex justify-start gap-4">
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>4.8</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-eye"></i>
+                <p>220</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-heart"></i>
+                <p>300</p>
+              </div>
+            </div>
+            <div>
+              <h1 class="mt-3 font-extrabold text-xl">
+                Laptop HP Pavilion Gaming 15
+              </h1>
+              <p class="mt-4 leading-[26px]">
+                - Garansi Resmi 3 Tahun by Sempurna Utama <br>
+                - Mohon tanyakan stok terlebih dahulu sebelum order <br>
+                - Harga dapat berubah sewaktu-waktu <br>
+                - Siap Kirim ke seluruh Indonesia <br>
+                - Harap konfirmasi jika barang sudah di terima <br>
+              </p>
+              <button onclick="toggleModal()" class="px-[22px] py-[10px] bg-[#FF4240] rounded-lg text-white mt-6">
+                Detail Spesifikasi
+              </button>
+            </div>
+            <div class="flex justify-start items-center gap-5 mt-4">
+              <div>
+                <p class="leading-[26px] text-[#FF4240] text-lg font-extrabold">
+                  Harga - 14.299.000
+                </p>
+              </div>
+              <div class="flex justify-start items-center gap-2">
+                <i style="font-size: 20px; margin-right: 10px;" class="fa-solid fa-cart-shopping"></i>
+                <p>Pengiriman Pulau Jawa : Gratis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-5 ps-6 pt-6 pb-[22px] pe-[38px] items-center border-[1px] rounded-2xl">
+          <div class="w-[40%]">
+            <img class="w-full" src="./Images/msi.webp" alt="" />
+          </div>
+          <div class="w-[60%]">
+            <div class="flex justify-start gap-4">
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>4.9</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <i class="fa-regular fa-heart"></i>
+                <p>200</p>
+              </div>
+            </div>
+            <div>
+              <h1 class="mt-3 font-extrabold text-xl">
+                Laptop MSI Cyborg 15
+              </h1>
+              <p class="mt-4 leading-[26px]">
+                - Garansi Resmi 3 Tahun by Sempurna Utama <br>
+                - Mohon tanyakan stok terlebih dahulu sebelum order <br>
+                - Harga dapat berubah sewaktu-waktu <br>
+                - Siap Kirim ke seluruh Indonesia <br>
+                - Harap konfirmasi jika barang sudah di terima <br>
+              </p>
+              <button onclick="toggleModal()" class="px-[22px] py-[10px] bg-[#FF4240] rounded-lg text-white mt-6">
+                Detail Spesifikasi
+              </button>
+            </div>
+            <div class="flex justify-start items-center gap-5 mt-4">
+              <div>
+                <p class="leading-[26px] text-[#FF4240] text-lg font-extrabold">
+                  Harga - Rp.15.999.000
+                </p>
+              </div>
+              <div class="flex justify-start items-center gap-2">
+                <i style="font-size: 20px; margin-right: 10px;" class="fa-solid fa-cart-shopping"></i>
+                <p>Pengiriman Pulau Jawa : Gratis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========FAQ SECTION====== -->
+    <section class="container mx-auto mt-[100px]" id="faq">
+      <div class="w-full py-8 flex justify-center items-center">
+        <div class="text-center">
+          <h1 class="text-4xl text-[#131318] font-extrabold">
+           Pertanyaan Pembeli
+          </h1>
+          <p class="mt-8 leading-6 text-base">
+            Hal yang sering ditanyakan di toko kami kami dapat melihat dibawah
+          </p>
+        </div>
+      </div>
+      <div class="mt-[48px] border-[1px] rounded-md flex items-center py-8 ps-8 pe-10 gap-10">
+        <div class="w-[40%]">
+          <img class="w-full" src="./Images/11.png" alt="" />
+        </div>
+        <div class="w-[60%] flex flex-col gap-6">
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-bold">Garansi Toko Bagaimana ?</div>
+            <div class="collapse-content">
+              <p class="leading-[26px]">
+                Kami Memberikan Garansi Toko Selama 3 Tahun Penuh Dengan Merek yang telah dipercayakan kepada kami untuk berkolaborasi
+                dan apabila ada kendala pada barang elektronik Anda. Anda dapat klaim langsung datang ke toko Kami
+              </p>
+            </div>
+          </div>
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-bold">
+              Apakah produk yang dijual baru atau bekas?
+            </div>
+            <div class="collapse-content">
+              <p class="leading-[26px]">
+                Toko Kami 100% dapat dipercaya masih tersegel dan belum pernah dipakai sebelumnya, apabila ada cacat barang pada saat membuka barang tersebut kami akan menggantinya dengan produk lain
+              </p>
+            </div>
+          </div>
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-bold">
+              Bagaimana cara pembayarannya?
+            </div>
+            <div class="collapse-content">
+              <p class="leading-[26px]">
+                Kami Menerima Beberapa cara apabila anda datang ke toko kami Anda bisa langsung membayarnya dengan uang tunai, apabila Anda membeli dari toko Online Anda dapat memakai Kartu Kredit, Kartu Debit, PayPal, dan Apple Pay
+              </p>
+            </div>
+          </div>
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-bold">Berapa lama estimasi pengiriman?</div>
+            <div class="collapse-content">
+              <p class="leading-[26px]">
+                Estimasi Pengiriman Akan berbeda-beda tergantung Wilayah Anda Estimasi Pengiriman pada toko Online kami sekitar 4 - 5 Hari tergantung pada kondisi pengiriman
+              </p>
+            </div>
+          </div>
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-bold">Bagaimana jika produk yang saya terima rusak atau tidak sesuai dengan deskripsi?</div>
+            <div class="collapse-content">
+              <p class="leading-[26px]">
+                Kami Akan Menggantikan Produk Anda dengan Syarat sebagai berikut : <br>
+                - Sertakan Video Unboxing Apabila Barang Anda Telah Sampai <br>
+                - Sertakan Foto Barang Anda Telah Sampai <br>
+                - Sertakan Bukti Pemyaran Anda <br>
+                - Chat Admin MegaComputers di 08958302392 <br>
+                - Lalu Akan Di Proses Oleh Admin kami untuk di tindaklanjuti
+              </p>
+            </div>
+          </div>
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-bold">Apakah ada promo atau diskon yang sedang berlangsung?</div>
+            <div class="collapse-content">
+              <p class="leading-[26px]">
+                Promo atau diskon akan setiap hari di Update apabila ada promo atau diskon yang sedang berlangsung dari beberapa merek brand
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========CONTACT SECTION====== -->
+    <section class="container mx-auto mt-[100px]" id="kontak">
+      <div class="w-full py-8 flex justify-center items-center">
+        <div class="text-center">
+          <h1 class="text-4xl text-[#131318] font-extrabold">Kontak Kami</h1>
+          <p class="mt-8 leading-6 text-base">
+            Kami Menerima Saran dan Kritik Anda Mengenai Produk dan Pelayanan Kami, <br>
+            Kami Sangat senang bila Anda memberikan masukan dan kritikan terhadap Kami. Terima Kasih 🙏🙏🙏
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center gap-6 w-full mt-12">
+        <div class="w-[40%] p-[50px] border-[1px] rounded-xl">
+          <div class="grid grid-cols-1 grid-rows-3 gap-6">
+            <div class="px-[32px] pt-[32px] pb-[40px] text-left bg-[#BCED6D] rounded-2xl">
+              <img src="./Images/Group 1171275318.png" alt="" />
+              <p class="text-base leading-8 mt-6">
+                Email : <br /><span class="text-lg font-extrabold">MegaComputers@support.com</span>
+              </p>
+            </div>
+            <div class="px-[32px] pt-[32px] pb-[40px] text-left bg-[#FDDD5F] rounded-2xl">
+              <img src="./Images/Group 1171275321.png" alt="" />
+              <p class="text-base leading-8 mt-6">
+                Lokasi : <br /><span class="text-lg font-extrabold">Jl . Raya No. 123, Sulawesi Selatan - Makassar
+
+                </span>
+              </p>
+            </div>
+            <div class="px-[32px] pt-[32px] pb-[40px] text-left bg-[#629CF3] rounded-2xl">
+              <img src="./Images/Group 1171275317.png" alt="" />
+              <p class="text-base leading-8 mt-6">
+                No. Handphone : <br /><span class="text-lg font-extrabold">(+62) 8958302392</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[60%]">
+          <form action="#" class="w-full">
+            <div class="flex items-center gap-6">
+              <div class="w-1/2">
+                <label for="userName" class="text-xl font-bold">Nama</label>
+                <input id="userName" class="w-full p-5 bg-[#13131823] rounded-2xl text-white mt-4" type="text"
+                  placeholder="Masukkan Nama Kamu" />
+              </div>
+              <div class="w-1/2">
+                <label for="userEmail" class="text-xl font-bold">Email</label>
+                <input id="userEmail" class="w-full p-5 bg-[#13131827] rounded-2xl text-white mt-4" type="email"
+                  placeholder="Masukkan Email Kamu" />
+              </div>
+            </div>
+            <div class="flex items-center gap-6 mt-4">
+              <div class="w-1/2">
+                <label for="userSubject" class="text-xl font-bold">Tulis Subjek</label>
+                <input id="userSubject" class="w-full p-5 bg-[#13131823] rounded-2xl text-white mt-4" type="text"
+                  placeholder="Masukkan Subjek Kamu" />
+              </div>
+              <div class="w-1/2">
+                <label for="userNumber" class="text-xl font-bold">No. Handphone</label>
+                <input id="userNumber" class="w-full p-5 bg-[#13131827] rounded-2xl text-white mt-4" type="number"
+                  placeholder="Masukkan Nomor Kamu" />
+              </div>
+            </div>
+            <div class="w-full mt-4">
+              <label for="userMessage" class="text-xl font-bold">Berikan Saran dan Kritik Kamu</label>
+              <textarea name="#" id="userMessage" class="w-full h-[370px] p-5 bg-[#13131827] rounded-2xl">Ketik di Sini</textarea>
+            </div>
+            <button class="w-full p-[15px] text-xl font-bold mt-4 text-white bg-[#FF4240] rounded-xl">
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ========SOCIAL MEDIA SECTION====== -->
+    <section class="container mx-auto mt-12 bg-[#13131812] rounded-xl py-[35px]">
+      <div class="flex flex-col justify-center items-center gap-6">
+        <h1 class="text-2xl font-extrabold text-[#131318]">Social Media Kami</h1>
+        <div class="flex justify-center items-center gap-8">
+          <!-- <i class="fa-brands fa-twitter text-4xl"></i> -->
+          <i class="fa-brands fa-facebook text-4xl"></i>
+          <i class="fa-brands fa-instagram text-4xl"></i>
+          <i class="fa-brands fa-tiktok text-4xl"></i>
+          <i class="fa-brands fa-youtube text-4xl"></i>
+          <!-- <i class="fa-brands fa-github text-4xl"></i> -->
+        </div>
+      </div>
+    </section>
+    
+    <section class="container mx-auto mt-12 bg-[#13131812] rounded-xl py-[35px]">
+      <div class="flex flex-col justify-center items-center gap-6">
+        <h1 class="text-2xl font-extrabold text-[#131318]">Metode Pembayaran</h1>
+        <div class="flex justify-center items-center gap-8">
+          <i class="fa-brands fa-cc-mastercard text-4xl"></i>
+          <i class="fa-brands fa-cc-visa text-4xl"></i>
+          <i class="fa-brands fa-paypal text-4xl"></i>
+          <i class="fa-brands fa-apple-pay text-4xl"></i>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <!-- ========MAIN SECTION======== -->
+  <!-- ========FOOTER SECTION====== -->
+  <footer class="bg-[#131318] text-white py-[120px] mt-[100px]">
+    <section class="container mx-auto">
+      <div class="inner-footer grid grid-cols-4 justify-start grid-rows-1 w-full gap-[158px] ml-6">
+        <div class="">
+          <h1 class="text-[28px] font-extrabold text-white">MegaComputer</h1>
+          <p class="text-base font-medium leading-[26px]">
+            Kami Memberikan 100% Garansi Asli
+          </p>
+          <div class="grid grid-rows-2">
+            <div class="flex items-center justify-start gap-4">
+              <div class="text-2xl">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="text-base font-medium">
+                <p>MegaComputers@support.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h1 class="text-[18px] font-extrabold text-white">Bisnis</h1>
+          <ul class="mt-[30px]">
+            <li class="font-medium text-base"><a href="#">Tentang Kami</a></li>
+            <li class="font-medium text-base"><a href="#">Bisnis Kami</a></li>
+            <li class="font-medium text-base"><a href="#"></a></li>
+            <li class="font-medium text-base">
+              <a href="#">Produk Terbaru</a>
+            </li>
+            <!-- <li class="font-medium text-base">
+              <a href="#">Legal Notice</a>
+            </li> -->
+          </ul>
+        </div>
+        <div class="">
+          <h1 class="text-[18px] font-extrabold text-white">Support</h1>
+          <ul class="mt-[30px]">
+            <li class="font-medium text-base"><a href="#">Pusat Bantuan</a></li>
+            <li class="font-medium text-base"><a href="#">FAQ</a></li>
+            <li class="font-medium text-base">
+              <a href="#">Pusat Bantuan</a>
+            </li>
+            <li class="font-medium text-base"><a href="#">Kontak Kami</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <h1 class="text-[18px] font-extrabold text-white">Services</h1>
+          <ul class="mt-[30px]">
+            <li class="font-medium text-base"><a href="#">Academy</a></li>
+            <li class="font-medium text-base">
+              <a href="#">Group Lesson</a>
+            </li>
+            <li class="font-medium text-base">
+              <a href="#">Private Lesson</a>
+            </li>
+            <li class="font-medium text-base">
+              <a href="#">Hockeys for kids</a>
+            </li>
+            <li class="font-medium text-base">
+              <a href="#">Hockeys for Adult</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- ========FOOTER SECTION====== -->
+  <script>
+    // Function to toggle the modal visibility
+    function toggleModal() {
+      const modal = document.getElementById('productDetailsModal');
+      modal.classList.toggle('hidden');
+    }
+  </script>
+</body>
+
+</html>
+
