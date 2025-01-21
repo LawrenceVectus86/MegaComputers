@@ -288,90 +288,99 @@
               </button>
             
               <!-- Modal -->
-              <div id="productDetailsModal" class="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center z-50 hidden">
-                <div class="bg-white rounded-lg p-6 w-96">
-                  <div class="flex justify-between items-center mb-4">
-                    <h5 class="text-xl font-semibold">Detail Spesifikasi</h5>
-                    <button onclick="toggleModal()" class="text-gray-600 text-xl">&times;</button>
-                  </div>
-            
-                  <!-- General Information -->
-                  <div class="mb-4">
-                    <h6 class="text-lg font-semibold">General Information</h6>
-                    <ul class="list-disc pl-6">
-                      <li><strong>Model:</strong> ASUS ROG STRIX Z490-H Z490 H GAMING</li>
-                      <li><strong>Garansi:</strong> 3 Tahun (by MegaComputer's)</li>
-                      <li><strong>Harga:</strong> Dapat berubah sewaktu-waktu</li>
-                      <li><strong>Pengiriman:</strong> Siap Kirim ke seluruh Indonesia</li>
-                      <li><strong>Catatan:</strong> Mohon tanyakan stok terlebih dahulu sebelum order.</li>
-                    </ul>
-                  </div>
-            
-                  <!-- Key Specifications -->
-                  <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/2">
-                        <h6 class="text-lg font-semibold">Key Specifications</h6>
-                        <ul class="mt-4 space-y-2">
-                            <li><strong>Chipset:</strong> Intel Z490</li>
-                            <li><strong>Socket:</strong> LGA 1200 (for 10th Gen Intel Core processors)</li>
-                            <li><strong>Memory:</strong>
-                                <ul class="pl-4 list-disc">
-                                    <li>4 x DDR4 DIMM slots</li>
-                                    <li>Supports up to 128GB DDR4-4600(OC) memory</li>
-                                    <li>Dual-channel memory architecture</li>
-                                </ul>
-                            </li>
-                            <li><strong>Storage:</strong>
-                                <ul class="pl-4 list-disc">
-                                    <li>2 x M.2 slots (one PCIe 3.0 x4, one PCIe 3.0 x4/SATA)</li>
-                                    <li>6 x SATA 6Gb/s ports</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="md:w-1/2">
-                        <ul class="mt-4 space-y-2">
-                            <li><strong>Graphics:</strong>
-                                <ul class="pl-4 list-disc">
-                                    <li>Supports PCIe 3.0 x16 slots (x16 or x8+x4+x4)</li>
-                                    <li>Integrated graphics support (varies by CPU)</li>
-                                </ul>
-                            </li>
-                            <li><strong>Networking:</strong>
-                                <ul class="pl-4 list-disc">
-                                    <li>Intel I225-V 2.5Gb Ethernet</li>
-                                    <li>Intel I219-V 1Gb Ethernet</li>
-                                </ul>
-                            </li>
-                            <li><strong>Audio:</strong>
-                                <ul class="pl-4 list-disc">
-                                    <li>ROG SupremeFX S1220A audio codec</li>
-                                    <li>7.1-channel HD audio</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+<div id="productDetailsModal" class="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center z-50 hidden">
+  <div class="bg-white rounded-lg p-6 w-full max-w-screen-lg">
+    <div class="flex justify-between items-center mb-4">
+      <h5 class="text-xl font-semibold">Detail Spesifikasi</h5>
+      <button onclick="toggleModal()" class="text-gray-600 text-xl">&times;</button>
+    </div>
+
+              <!-- Konten Modal -->
+              <div class="flex flex-col md:flex-row gap-8">
+                <!-- General Information -->
+                <div class="flex-1">
+                  <h6 class="text-lg font-semibold">General Information</h6>
+                  <ul class="list-disc pl-6 mt-2">
+                    <li><strong>Model:</strong> ASUS ROG STRIX Z490-H Z490 H GAMING</li>
+                    <li><strong>Garansi:</strong> 3 Tahun (by MegaComputer's)</li>
+                    <li><strong>Harga:</strong> Dapat berubah sewaktu-waktu</li>
+                    <li><strong>Pengiriman:</strong> Siap Kirim ke seluruh Indonesia</li>
+                    <li><strong>Catatan:</strong> Mohon tanyakan stok terlebih dahulu sebelum order.</li>
+                  </ul>
                 </div>
-            
-                  <div class="mt-4 text-right">
-                    <button onclick="toggleModal()" class="px-4 py-2 bg-gray-300 rounded-lg">Close</button>
+
+                <!-- Key Specifications -->
+                <div class="flex-1">
+                  <h6 class="text-lg font-semibold">Key Specifications</h6>
+                  <div class="flex flex-col md:flex-row gap-4 mt-2">
+                    <!-- Kolom 1 -->
+                    <div class="flex-1">
+                      <ul class="space-y-2">
+                        <li><strong>Chipset:</strong> Intel Z490</li>
+                        <li><strong>Socket:</strong> LGA 1200 (for 10th Gen Intel Core processors)</li>
+                        <li><strong>Memory:</strong>
+                          <ul class="pl-4 list-disc">
+                            <li>4 x DDR4 DIMM slots</li>
+                            <li>Supports up to 128GB DDR4-4600(OC) memory</li>
+                            <li>Dual-channel memory architecture</li>
+                          </ul>
+                        </li>
+                        <li><strong>Storage:</strong>
+                          <ul class="pl-4 list-disc">
+                            <li>2 x M.2 slots (one PCIe 3.0 x4, one PCIe 3.0 x4/SATA)</li>
+                            <li>6 x SATA 6Gb/s ports</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Kolom 2 -->
+                    <div class="flex-1">
+                      <ul class="space-y-2">
+                        <li><strong>Graphics:</strong>
+                          <ul class="pl-4 list-disc">
+                            <li>Supports PCIe 3.0 x16 slots (x16 or x8+x4+x4)</li>
+                            <li>Integrated graphics support (varies by CPU)</li>
+                          </ul>
+                        </li>
+                        <li><strong>Networking:</strong>
+                          <ul class="pl-4 list-disc">
+                            <li>Intel I225-V 2.5Gb Ethernet</li>
+                            <li>Intel I219-V 1Gb Ethernet</li>
+                          </ul>
+                        </li>
+                        <li><strong>Audio:</strong>
+                          <ul class="pl-4 list-disc">
+                            <li>ROG SupremeFX S1220A audio codec</li>
+                            <li>7.1-channel HD audio</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="flex justify-start items-center gap-5 mt-4">
-              <div>
-                <p class="leading-[26px] text-[#FF4240] text-lg font-extrabold">
-                  Price - Rp.4.320.000
-                </p>
-              </div>
-              <div class="flex justify-start items-center gap-2">
-                <i style="font-size: 20px; margin-right: 10px;" class="fa-solid fa-cart-shopping"></i>
-                <p>Pengiriman <br> Pulau Jawa : Gratis</p>
+
+              <!-- Tombol Close -->
+              <div class="mt-4 text-right">
+                <button onclick="toggleModal()" class="px-4 py-2 bg-gray-300 rounded-lg">Close</button>
               </div>
             </div>
           </div>
         </div>
+
+              <div class="flex justify-start items-center gap-5 mt-4">
+                <div>
+                  <p class="leading-[26px] text-[#FF4240] text-lg font-extrabold">
+                    Price - Rp.4.320.000
+                  </p>
+                </div>
+                <div class="flex justify-start items-center gap-2">
+                  <i style="font-size: 20px; margin-right: 10px;" class="fa-solid fa-cart-shopping"></i>
+                  <p>Pengiriman <br> Pulau Jawa : Gratis</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
         <!-- Card 2 -->
         <div class="flex gap-5 ps-6 pt-6 pb-[22px] pe-[38px] items-center border-[1px] rounded-2xl">
